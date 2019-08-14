@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsolaFiguraGeometroca.Interface;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,13 @@ namespace ConsolaFiguraGeometroca
     {
         static void Main(string[] args)
         {
+        }
+
+        static void mostrarInformacion(IFiguraGeometrica figura)
+        {
+            Console.WriteLine($"Nombre: {figura.ObtenerNombre()}");
+            Console.WriteLine($"Area: {figura.CalcularArea()}");
+            Console.WriteLine($"Perimetro: {figura.CalcularPerimetro()}");
         }
     }
 }
