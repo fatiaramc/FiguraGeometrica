@@ -1,4 +1,5 @@
 ﻿using ConsolaFiguraGeometroca.Interface;
+using ConsolaFiguraGeometroca.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,9 @@ namespace ConsolaFiguraGeometroca
     {
         static void Main(string[] args)
         {
+            var triangulo = new Triangulo(3, 3);
+            mostrarInformacion(triangulo);
+            Console.ReadKey();
         }
 
         static void mostrarInformacion(IFiguraGeometrica figura)
