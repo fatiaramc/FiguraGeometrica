@@ -1,4 +1,5 @@
 ﻿using ConsolaFiguraGeometroca.Interface;
+using ConsolaFiguraGeometroca.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,9 @@ namespace ConsolaFiguraGeometroca
     {
         static void Main(string[] args)
         {
+            var cuadrado = new Cuadrado(5);
+            mostrarInformacion(cuadrado);
+            Console.ReadKey();
         }
 
         static void mostrarInformacion(IFiguraGeometrica figura)
